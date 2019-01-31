@@ -5,7 +5,7 @@ from setuptools import find_packages
 setup(name='DDrop',
       version='0.0.7',
       description='Mathematical Dropconnect',
-      author='Derek Khu',
+      author='Derek Khu, Andrea Santilli',
       author_email='derek.khu@gmail.com',
       license='MIT',
       install_requires=['keras'],
