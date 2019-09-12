@@ -40,6 +40,6 @@ class DropConnect(Wrapper):
 
     def call(self, x):
         if 0. < self.prob < 1.:
-            self.layer.kernel = K.in_train_phase(K.dropout(self.layer.kernel, self.prob), self.layer.kernel)
-            self.layer.bias = K.in_train_phase(K.dropout(self.layer.bias, self.prob), self.layer.bias)
+            self.layer.kernel = K.in_train_phase(K.dropout(self.layer.kernel, self.prob) * (1-self.prob), self.layer.kernel)
+            self.layer.bias = K.in_train_phase(K.dropout(self.layer.bias, self.prob) * (1-self.prob), self.layer.bias) 
         return self.layer.call(x)
