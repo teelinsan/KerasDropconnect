@@ -1,5 +1,5 @@
 # KerasDropconnect
-An implementation of <a href="http://proceedings.mlr.press/v28/wan13.html">DropConnect</a> Layer in Keras
+An implementation of <a href="http://proceedings.mlr.press/v28/wan13.html" target=”_blank”>DropConnect</a> Layer in Keras
 
 ## Install
 ```
